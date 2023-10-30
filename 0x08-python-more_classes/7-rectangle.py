@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""2-Rectangle module"""
+"""Rectangle module"""
 
 
 class Rectangle:
     """Rectangle class"""
 
     number_of_instances = 0
-    print_symbool = "#"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """init
@@ -64,7 +64,7 @@ class Rectangle:
         """returns a rectangle with the character #"""
         if self.width == 0 or self.height == 0:
             return ""
-        rec = ((self.width * f"{self.print_symbool}" + "\n") * self.height).rstrip()
+        rec = ((self.width * f"{self.print_symbol}" + "\n") * self.height).rstrip()
         return rec
 
     def __repr__(self):
